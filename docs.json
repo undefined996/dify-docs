@@ -1841,7 +1841,7 @@
     },
     {
       "source": "/en/getting-started/install-self-hosted/:slug*",
-      "destination": "/en/self-host/dify-community/:slug*"
+      "destination": "/en/self-host/quick-start/docker-compose"
     },
     {
       "source": "/en/guides/workflow/:slug*",
@@ -1965,7 +1965,7 @@
     },
     {
       "source": "/ja-jp/getting-started/install-self-hosted/:slug*",
-      "destination": "/ja/self-host/dify-community/:slug*"
+      "destination": "/ja/self-host/quick-start/docker-compose"
     },
     {
       "source": "/ja-jp/guides/workflow/:slug*",
@@ -2097,7 +2097,7 @@
     },
     {
       "source": "/zh-hans/getting-started/install-self-hosted/:slug*",
-      "destination": "/zh/self-host/dify-community/:slug*"
+      "destination": "/zh/self-host/quick-start/docker-compose"
     },
     {
       "source": "/zh-hans/guides/workflow/:slug*",
