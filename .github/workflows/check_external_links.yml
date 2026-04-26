@@ -8,7 +8,7 @@ on:
 jobs:
   external-links:
     name: Check external links
-    runs-on: ubuntu-latest
+    runs-on: depot-ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
 

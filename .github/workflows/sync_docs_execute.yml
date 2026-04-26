@@ -24,7 +24,7 @@ concurrency:
 
 jobs:
   execute-sync:
-    runs-on: ubuntu-latest
+    runs-on: depot-ubuntu-24.04
     if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     steps:
       - name: Check workflow source
@@ -468,7 +468,7 @@ jobs:
             }
 
   handle-cancellation:
-    runs-on: ubuntu-latest
+    runs-on: depot-ubuntu-24.04
     needs: execute-sync
     if: always() && needs.execute-sync.result == 'cancelled'
     steps:
@@ -530,7 +530,7 @@ jobs:
             }
 
   handle-failure:
-    runs-on: ubuntu-latest
+    runs-on: depot-ubuntu-24.04
     if: github.event.workflow_run.conclusion == 'failure'
     steps:
       - name: Report analysis failure

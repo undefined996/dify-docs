@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   update-translation:
-    runs-on: ubuntu-latest
+    runs-on: depot-ubuntu-24.04
     # Only run if analyze workflow succeeded
     if: github.event.workflow_run.conclusion == 'success'
     steps:
@@ -320,7 +320,7 @@ jobs:
             }
 
   handle-cancellation:
-    runs-on: ubuntu-latest
+    runs-on: depot-ubuntu-24.04
     needs: update-translation
     if: always() && needs.update-translation.result == 'cancelled'
     steps:

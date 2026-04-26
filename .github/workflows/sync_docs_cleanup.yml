@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   cleanup-sync-pr:
-    runs-on: ubuntu-latest
+    runs-on: depot-ubuntu-24.04
     # Skip if this IS a sync PR (don't want infinite loops)
     if: "!startsWith(github.event.pull_request.head.ref, 'docs-sync-pr-')"
     steps:

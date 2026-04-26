@@ -11,7 +11,7 @@ on:
 jobs:
   internal-links:
     name: Check internal links
-    runs-on: ubuntu-latest
+    runs-on: depot-ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
